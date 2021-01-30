@@ -149,8 +149,8 @@ UI.scoringRules = {
 			return score;
 		}
 
-		var secondsPassed = ((UI.state.sessionInfo.timeTotal/3600)*60)-UI.state.sessionInfo.timeLeft
-		if (secondsPassed < 20 && driver.scoreInfo.positionOverall === 4) {
+		var secondsPassed = UI.state.sessionInfo.timeTotal;
+		if (secondsPassed < 20 && driver.scoreInfo.positionOverall === 1) {
 			score += 30;
 		}
 
